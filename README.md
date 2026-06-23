@@ -1,16 +1,20 @@
-# CareerData-Scraper & Exploratory Data Analysis (EDA)
+# CareerData-Scraper
 
 ## Project Overview
 
-CareerData-Scraper is a Python-based Data Analytics project that collects job listing information from a public job portal using web scraping techniques and performs Exploratory Data Analysis (EDA) on the collected dataset.
+CareerData-Scraper is a Python-based Data Analytics project that collects job listing information from a public job portal using web scraping techniques and performs Exploratory Data Analysis (EDA) and Data Visualization on the collected dataset.
 
-The project demonstrates the complete data workflow from data collection to data exploration and visualization.
+This project demonstrates the complete data analytics workflow, from data collection and cleaning to analysis and visualization.
 
 ---
 
-## Features
+## Task 1: Web Scraping
 
-### Task 1: Web Scraping
+### Objective
+
+Collect job listing data from a public website and store it in a structured format.
+
+### Features
 
 * Extracts Job Titles
 * Extracts Company Names
@@ -18,45 +22,70 @@ The project demonstrates the complete data workflow from data collection to data
 * Creates a structured dataset
 * Exports data to CSV format
 
-### Task 2: Exploratory Data Analysis (EDA)
-
-* Explores dataset structure
-* Identifies missing values
-* Detects duplicate records
-* Analyzes job title distribution
-* Analyzes hiring companies
-* Analyzes job locations
-* Generates visualizations for key insights
-
----
-
-## Technologies Used
+### Technologies Used
 
 * Python
 * Requests
 * BeautifulSoup
 * Pandas
-* Matplotlib
 
 ---
 
-## Project Structure
+## Task 2: Exploratory Data Analysis (EDA)
 
-CareerData-Scraper/
+### Objective
 
-├── job_scraper.py
+Explore the dataset to identify patterns, trends, and potential data quality issues.
 
-├── eda_analysis.py
+### Analysis Performed
 
-├── jobs.csv
+* Dataset Structure Exploration
+* Missing Value Detection
+* Duplicate Record Detection
+* Job Title Analysis
+* Company Analysis
+* Location Analysis
 
-├── top_job_titles.png
+### Questions Explored
 
-├── top_companies.png
+1. Which job titles appear most frequently?
+2. Which companies are hiring the most?
+3. Which locations have the highest number of job opportunities?
+4. Are there any missing values in the dataset?
+5. Are there any duplicate records present?
 
-├── top_locations.png
+### Key Findings
 
-└── README.md
+* Identified the most common job roles.
+* Identified the most active hiring companies.
+* Identified locations with the highest concentration of job opportunities.
+* Verified dataset quality through missing value and duplicate analysis.
+
+---
+
+## Task 3: Data Visualization
+
+### Objective
+
+Transform raw data into meaningful visual representations to uncover insights.
+
+### Visualizations Created
+
+* Top Job Titles Bar Chart
+* Top Hiring Companies Bar Chart
+* Top Job Locations Bar Chart
+
+### Insights Generated
+
+* Job opportunities are concentrated in a few major locations.
+* Certain job roles appear more frequently than others.
+* A small number of companies contribute a significant portion of job postings.
+* Visualizations help identify hiring trends quickly and effectively.
+
+### Tools Used
+
+* Matplotlib
+* Pandas
 
 ---
 
@@ -70,30 +99,36 @@ The generated dataset contains:
 
 ---
 
-## EDA Questions Explored
+## Project Structure
 
-1. Which job titles appear most frequently?
-2. Which companies are hiring the most?
-3. Which locations have the highest number of job opportunities?
-4. Are there any missing values in the dataset?
-5. Are there any duplicate records present?
+CareerData-Scraper/
+
+├── job_scraper.py
+
+├── eda_analysis.py
+
+├── visualization.py
+
+├── jobs.csv
+
+├── top_job_titles.png
+
+├── top_companies.png
+
+├── top_locations.png
+
+└── README.md
 
 ---
 
-## Visualizations Generated
+## Output
 
-* Top Job Titles
-* Top Hiring Companies
-* Top Job Locations
+The project generates:
 
----
-
-## Key Findings
-
-* Identified the most common job roles.
-* Identified the most active hiring companies.
-* Identified locations with the highest concentration of job opportunities.
-* Checked dataset quality through missing value and duplicate record analysis.
+* Structured Job Dataset (CSV)
+* Exploratory Data Analysis Results
+* Data Visualization Charts
+* Hiring Trend Insights
 
 ---
 
